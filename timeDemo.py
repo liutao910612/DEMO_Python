@@ -27,6 +27,12 @@ test_sleep()
 
 
 # clock()
-t1 = time.clock()
-time.sleep(2)
-print(time.clock())
+# t1 = time.clock()
+# time.sleep(2)
+# print(time.clock())
+
+# strftime(format[,t]) 返回格式化的时间字符串，其中t为可以指定的时间元组
+print(time.strftime('%Y %m %d %H:%M:%S'))
+
+#strptime(string[,format]) 以指定格式将一个时间字符串转换成时间元组
+print(time.strptime("2020 02 18 21:17:00","%Y %m %d %H:%M:%S"))
